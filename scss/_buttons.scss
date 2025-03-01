@@ -1,0 +1,18 @@
+.button{
+    background-color: var(--brand-color);
+    color: var(--color-primary-white);
+    border-radius: 32px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 10px 42px;
+    @media screen and(min-width:$bp-tablet) {
+        padding: 16px 56px;
+        
+    }
+}
+.button:hover{
+    background-color: var(--color-primary-white);
+    border: 1px solid var(--brand-color);
+    color: var(--brand-color);
+    transition: all 0.3s ease-in;
+}

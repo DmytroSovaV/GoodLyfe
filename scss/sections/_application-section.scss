@@ -1,0 +1,70 @@
+.application-section{
+    background-color: var(--brand-color);
+    padding: 60px 0px 0px 0px;
+    @media screen and(min-width:$bp-tablet) {
+        padding: 108px 0;
+        
+    }
+
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+&__container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    @media screen and(min-width:$bp-tablet) {
+        flex-wrap: nowrap;
+    }
+    
+    // position: relative;
+}
+&__info p{
+    max-width: 489px;
+}
+&__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+&__mobiles{
+    flex-wrap: wrap;
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    @media screen and(min-width:$bp-mobile) {
+        flex-wrap: nowrap;
+    }
+}
+&__mobiles .phones{
+    max-width: 200px;
+    position: sticky;
+    @media screen and(min-width:869px) {
+        position: absolute;
+        
+    }
+}
+.left-phone {
+    top: -140px;
+    left: 0px;
+    z-index: 2;
+}
+.links-for-download a:hover{
+    transform: scale(1.02);
+}
+.right-phone {
+    right: 0px;
+    top: 60px;
+    z-index: 1;
+    @media screen and(min-width:1280px) {
+        right: 140px;
+    }
+}
+.title-download-text{
+    color: #FFFFFF99;
+}
+}

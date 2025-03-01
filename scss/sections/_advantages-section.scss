@@ -1,0 +1,44 @@
+.advantages-section{
+    background-image: linear-gradient(45deg, rgba(40, 36, 36, 0.2), rgba(100, 100, 100, 0.8)),
+            url(/img/advantages-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    @media screen and ( min-width:$bp-tablet) {
+        background-position: top;
+        
+    }
+    // height: 100vh;
+h2{
+    padding-top: 75px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    @media screen and (min-width:$bp-tablet){
+        padding-top: 231px;
+        font-size: 60px;
+
+    }
+}
+p{
+    max-width: 257px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans',sans-serif;
+    @media screen and ( min-width:$bp-tablet) {
+        max-width: 533px;
+        font-size: 17px;
+        
+    }
+}
+.button{
+    margin-bottom: 75px;
+    margin-top: 20px;
+    padding: 10px 100px;
+    @media screen and (min-width:$bp-tablet) {
+        margin-bottom: 247px;
+        padding: 15px 77px;
+    }
+}
+}

@@ -1,0 +1,42 @@
+.socials-section{
+    background-color: var(--color-socials-background);
+    padding: 70px 0;
+&__container{
+    margin: 0 auto;
+}
+h2{
+    color:var(--brand-color);
+    font-size: 700px;
+    font-size: 40px;
+    text-align: center;
+}
+&__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    @media screen and(min-width:$bp-mobile) {
+        gap:90px;
+    
+        }
+}
+&__links li{
+    padding: 27px 32px; 
+    @media screen and(min-width:$bp-tablet) {
+        padding: 40px 48px;
+        
+    }
+    border-radius: 50%;
+    margin-top: 25px;
+    background-color: var(--color-primary-white);
+}
+&__links svg{
+    fill: var(--brand-color);
+}
+&__links a:hover li{
+    background-color: var(--brand-color);
+}
+&__links a:hover svg{
+    fill:black;
+}
+}
