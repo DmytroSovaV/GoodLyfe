@@ -1,0 +1,100 @@
+.footer{
+    background-color: var(--color-footer-background);
+    color: var(--color-grey-300) ;
+    font-size: 14px;
+    line-height: 1.2;
+&__container{
+    padding: 96px 32px 80px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    @media screen and(min-width:862px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+&__brand-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.guides{
+    display: none;
+    @media screen and (min-width:862px){
+        display: block;
+    }
+}
+&__company-socials ul{
+    display: flex;
+    gap: 16px;
+
+svg{
+    fill: var(--color-primary-white);
+}
+li{
+    cursor: pointer;
+    background-color:var(--color-primary-grey);
+    border-radius: 50%;
+    padding: 5px;
+}
+li:hover svg{
+    transform: rotate(-10deg);
+    transition: all 0.3s ease-in-out;
+    fill: var(--brand-color) ;
+}
+li:hover{
+    background-color: transparent;
+}
+}
+.list-name{
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.brand-color{
+    color: var(--brand-color);
+}
+ul a:hover{
+    color: var(--brand-color);
+}
+&__brand-info p{
+    max-width: 255px;
+}
+&__container ul:not(:first-child){
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+address{
+    font-style: normal;
+}
+address svg{
+    fill: var(--brand-color);
+}
+&__terms-and-conditions{
+    display: flex;
+    justify-content: space-between;
+}
+&__terms-and-conditions li{
+    padding: 0 10px 0 0;
+    border-right: 2px solid var(--color-primary-grey);
+}
+&__conditions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+}
+.parent{
+    position: relative;
+}
+.decorate-icons-footer{
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 20px;
+    height: 18px;
+     
+}
